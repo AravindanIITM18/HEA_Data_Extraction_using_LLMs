@@ -13,36 +13,6 @@ from the text of materials-science articles (typically multicomponent / high-ent
 
 ---
 
-## 1. Repository Structure
-
-A suggested layout for the repo is:
-
-```text
-.
-├── README.md
-├── .env.example
-├── rag_examples.py
-├── embeddings_utils.py
-├── openai_clients.py
-├── doi_utils.py
-├── material_extractor.py
-├── run_batch.py
-└── ipynb_to_py.py
-```
-
-You will also have runtime data/output directories, e.g.:
-
-```text
-./articles_all/                      # Input: per-DOI processed text
-./query_set1_dois_results_dec_ver_all/  # Output: per-DOI extraction results
-./examples_embeddings/               # Precomputed example embeddings (.pkl)
-./logs_dec_ver_q1_set.txt            # Global log for batch runs
-```
-
-These folders are usually **not** committed fully to Git; you can add them to `.gitignore` or commit a small sample.
-
----
-
 ## 2. Installation
 
 ### Python Version
