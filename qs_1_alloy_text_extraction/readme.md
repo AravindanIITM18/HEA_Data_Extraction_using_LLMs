@@ -20,7 +20,6 @@ A suggested layout for the repo is:
 ```text
 .
 ├── README.md
-├── requirements.txt
 ├── .env.example
 ├── rag_examples.py
 ├── embeddings_utils.py
@@ -57,34 +56,11 @@ Create and activate a virtual environment, then:
 ```bash
 pip install -r requirements.txt
 ```
-
-Example `requirements.txt`:
-
-```text
-openai>=1.0.0
-httpx==0.27.2
-transformers
-faiss-cpu
-numpy
-pandas
-nbformat
-```
-
-Add extra libraries if needed (e.g. `tqdm`).
-
 ---
 
 ## 3. OpenAI Configuration
 
 All OpenAI API keys and model names are configured via environment variables.
-
-### 3.1. `.env.example`
-
-An example `.env.example` file:
-
-```bash
-# Copy this file to `.env` and fill in your values.
-# Then you can either `export` them manually or use a loader like python-dotenv.
 
 # Default / fallback API key
 OPENAI_API_KEY="your_default_openai_key"
