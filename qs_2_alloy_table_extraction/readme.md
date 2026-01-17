@@ -32,8 +32,6 @@ the pipeline:
 
 ## 2. Repository Structure
 
-A typical layout is:
-
 ```text
 .
 ├─ src/
@@ -52,7 +50,6 @@ A typical layout is:
 │          ├─ Table2.csv
 │          └─ ...
 ├─ QuerySet2_Database.xlsx  # output
-├─ requirements.txt
 ├─ README.md
 └─ .gitignore
 ```
@@ -63,8 +60,8 @@ A typical layout is:
 ### 3.1. Clone and create a virtual environment
 
 ```bash
-git clone https://github.com/<your-username>/he-alloy-table-extraction.git
-cd he-alloy-table-extraction
+git clone https://github.com/AravindanIITM18/HEA_Data_Extraction_using_LLMs.git
+cd HEA_Data_Extraction_using_LLMs
 
 python -m venv .venv
 source .venv/bin/activate    
